@@ -1,0 +1,128 @@
+.contact .icons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+ margin-bottom: 2rem;
+}
+
+.contact .icons-container .icons {
+  flex: 1 1 20rem;
+  text-align: center;
+  padding: 2rem;
+  width: 20rem;
+  height: 20rem;
+  background-color: wheat;
+  border-radius: .5rem;
+  box-shadow: 1rem 1rem 10px rgb(0, 0, 0, 0.15);
+}
+
+.contact .icons-container .icons i {
+  height: 5rem;
+  width: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  vertical-align: baseline;
+  color:var(--mcolor);
+
+}
+
+.contact .icons-container .icons h3{
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.793);
+  border-radius: 50rem;
+
+}
+
+.contact .icons-container .icons p {
+white-space: nowrap;
+
+}
+
+
+.contact .feedback-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  background-color: wheat;
+  padding: 2rem 0;
+  border-radius: .5rem;
+  box-shadow: 1rem 1rem 10px rgb(0, 0, 0, 0.15);
+}
+
+.contact .feedback-form h3{
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.793);
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.contact .feedback-form h3 span{
+  color:var(--semicolor);
+  padding-left: 1rem;
+}
+
+.contact .feedback-form #btn-contact{
+  width: 80%;
+
+}
+
+.contact .feedback-form .content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.contact .feedback-form .content .texts {
+display: flex;
+flex-direction: column;
+padding: 2rem;
+}
+
+.contact .feedback-form .content .texts .field{
+width: 100%;
+height: 2rem;
+margin: 1rem 0;
+padding: 0.5rem 1rem;
+font-size: 1rem;
+background-color: white;
+border: .1rem solid wheat;
+}
+
+.contact .feedback-form .content .texts span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact .feedback-form .content .texts textarea{
+  height: 200px;
+  width: 100%;
+  background-attachment: local;
+  background-image:
+      linear-gradient(to right, white 1rem, transparent 10px),
+      linear-gradient(to left, white 1rem, transparent 10px),
+      repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+  line-height: 3.1rem;
+  padding: 0.8rem 1rem;
+  border: .1rem solid wheat;
+  resize: none;
+  } 
+
+
+  .contact .feedback-form .content .texts .field::placeholder,
+  .contact .feedback-form .content .texts textarea::placeholder{
+    color: rgb(0, 0, 0,0.15);
+    text-transform: none;
+  }
+
+  
