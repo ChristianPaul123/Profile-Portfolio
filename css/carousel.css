@@ -32,7 +32,6 @@
   right: -22px;
 }
 .wrapper .carousel{
-  font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
@@ -46,18 +45,18 @@
   pointer-events: none;
 }
 .carousel img{
-  height: 250px;
+  height: 30rem;
   object-fit: cover;
   user-select: none;
-  margin-left: 1.4rem;
+  margin-left: 1.2rem;
   width: calc(100% / 3);
 }
 .carousel img:first-child{
-  margin-left: 0px;
+  margin-left: 0rem
 }
 
 .carousel img:last-child{
-  margin-right: 0px;
+  margin-right: 0rem;
 }
 
 @media screen and (max-width: 900px) {
