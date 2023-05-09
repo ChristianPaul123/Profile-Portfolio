@@ -16,6 +16,7 @@
     <!-- css files -->
     <link rel="stylesheet" href="css/nav_bar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 
   </head>
 
@@ -35,11 +36,11 @@
     </nav>
 
     <div class="follow">
-      <a href="https://www.facebook.com/christianpaul.espares.90" class="fab fa-facebook" target="_blank"></a>
-      <a href="#" class="fa-solid fa-envelope"></a>
-      <a href="https://github.com/ChristianPaul123" class="fab fa-github" target="_blank"></a>
-      <a href="https://discordapp.com/users/Sympel#4725" class="fab fa-discord" target="_blank"></a>
-      <a href="https://t.me/@Sympel1" class="fab fa-telegram" target="_blank"></a>
+      <a href="https://www.facebook.com/christianpaul.espares.90" target="_blank" class="fab fa-facebook" target="_blank"></a>
+      <a href="http://m.me/christianpaul.espares.90" target="_blank" class="fa-solid fa-envelope"></a>
+      <a href="https://github.com/ChristianPaul123" target="_blank" class="fab fa-github" target="_blank"></a>
+      <a href="https://discordapp.com/users/Sympel#4725" target="_blank" class="fab fa-discord" target="_blank"></a>
+      <a href="https://t.me/@Sympel1" target="_blank" class="fab fa-telegram" target="_blank"></a>
     </div>
     <div class="footer">
       <p>BSIT-2B</p>
@@ -57,15 +58,33 @@
         <a href="#" class="btn" id="button">about me</a>
     </div>
 
-    <div class="image">
-      
-      <div class="img-container">
-        <img src="Images/Home-pic.jpg" />
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="img-container">
+         <img src="Images/Home-pic.jpg" alt="">
+        </div>
+         <div class="title">
+            Hello!!
+         </div>
+         <div class="sub-title">
+            Fellow Peeps
+         </div>
       </div>
-      
+      <div class="info">
+         <p>
+            Back-end and front-end developer
+         </p>
+      </div>
     </div>
   </section>
 <script src="js/script.js"></script>
+<script>
+  const img = document.querySelector("img");
+  img.onclick = function(){
+    this.classList.toggle("active");
+  }
+</script>
 </body>
  
 

@@ -39,8 +39,9 @@
 }
 
 .contact .icons-container .icons p {
-white-space: nowrap;
-
+white-space: wrap;
+text-transform: lowercase;
+line-height: 1.5rem;
 }
 
 
@@ -121,7 +122,7 @@ border: .1rem solid wheat;
 
   .contact .feedback-form .content .texts .field::placeholder,
   .contact .feedback-form .content .texts textarea::placeholder{
-    color: rgb(0, 0, 0,0.15);
+    color: rgba(0, 0, 0,0.5);
     text-transform: none;
   }
 

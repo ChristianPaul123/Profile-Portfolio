@@ -72,27 +72,79 @@ hr{
   gap: 4rem;
 }
 
-.home .image{
-  flex: 1 1 20rem;
-  border-radius: 35rem;
+.home .container{
+  height: 24rem;
+  width: 25rem;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 30%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #e0a400d4, rgba(184, 126, 19, 0.93));
   order: -1;
 }
+.home .container:hover{
+  height: 38rem;
+  width: 35rem;
+  border-radius: 10rem;
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+}
 
-.home .image .img-container{
+.home .container .wrapper img{
+  position: relative;
+  z-index: 20;
+  border-radius: 30%;
+  display: block;
+  height: 20rem;
+  width: 20rem;
+  border: 5px solid wheat;
+  object-fit: cover;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+}
+.home .container:hover .wrapper img.active{
+  height: 47rem;
+  width: 35rem;
+  margin: 0rem auto;
+  border: none;
+  border-radius: .5rem;
+}
+
+
+.home .img-container{
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(211, 143, 17);
   border-radius: 5rem;
-  box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.20);
 }
 
-.home .image .img-container img {
-  width: 97%;
-  height: 100%;
+.home .img-container img {
+  width: 100%;
   object-fit: cover;
-  padding-bottom: 1rem;
   border-radius: inherit;
-  border-bottom-right-radius: 40rem;
+}
+
+.home .container .wrapper .title{
+  color: antiquewhite;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.home .container .wrapper .sub-title{
+  color: antiquewhite;
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+  margin: 10px 0;
+  text-align: center;
+}
+.home .container .info{
+  color: antiquewhite;
+  font-size: 1.9rem;
+  margin-top: 1rem;
+  text-align: center;
+
 }
 
 .home .content{
@@ -150,8 +202,6 @@ hr{
 
 }
 
-
-
 .heading{
   font-size: 4rem;
   padding-bottom: 1rem;
@@ -164,7 +214,16 @@ hr{
   text-transform: uppercase;
 }
 
+ .subheading{
+  font-size: 3.5rem;
+  color: var(--hcolor);
+  text-transform: uppercase;
+}
 
+ .subheading span{
+  color:var(--semicolor);
+  text-transform: uppercase;
+ }
 
 
 /* media queries */
@@ -191,15 +250,10 @@ hr{
     gap: 4rem;
   }
   
-  .home .image{
-    flex: 1 1 15rem;
-    border-radius: 3rem;
-  }
   
   .home .image .img-container{
     background-color: rgb(211, 143, 17);
     border-radius: 4rem;
-    box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.20);
   }
  
 

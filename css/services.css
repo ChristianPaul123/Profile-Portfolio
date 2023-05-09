@@ -1,0 +1,143 @@
+.service .row-1{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--wheatcolor);
+  padding: 1rem;
+  border-radius: 2rem;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.row-1 .container .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row-1 .container .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.row-1 .container .boxes .box:hover{
+  background: #4070f4;
+  color: #fff;
+}
+.row-1 .container .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.row-1 .container .boxes .box:hover .icon{
+  background-color: #fff;
+  color: #4070f4;
+}
+.row-1 .container .boxes .box:hover .topic,
+.row-1 .container .boxes .box:hover p{
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+.row-1 .container .boxes .box:hover .topic,
+.row-1 .container .boxes .box:hover p{
+  color: #fff;
+}
+
+.service .row-4{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--wheatcolor);
+  padding: 1rem;
+  border-radius: 2rem;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.center,.front-face,
+.contents,.back-face{
+  position: absolute;
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20rem;
+  transform-style: preserve-3d;
+ perspective: 1000px;
+ position: relative;
+}
+.front-face, .back-face{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2),
+              rgba(182, 123, 12, 0.2)),url('bg.https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0deg);
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.4,.2,.2,1);
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  width: 100%;
+  perspective: 1000px;
+}
+.front p{
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.front span{
+  font-size: 23px;
+  color: white;
+}
+.front p:after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.back-face{
+  transform: rotateY(180deg);
+  background: linear-gradient(45deg,#483604 0%,#352903 100%);
+}
+.back {
+  color: white;
+}
+.back h2{
+  font-size: 33px;
+  padding-bottom: 5px;
+}
+.back span{
+  font-size: 25px;
+}
+
+.center:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.center:hover > .front-face{
+  transform: rotateY(-180deg);
+}
