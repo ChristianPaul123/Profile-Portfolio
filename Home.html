@@ -17,10 +17,14 @@
     <link rel="stylesheet" href="css/nav_bar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/loader.css">
 
   </head>
 
 <body>
+  <div class="loader">
+    <div class="ring"></div>
+  </div>
 
 <div id="menu-bars" class="fas fa-bars"></div>
 
@@ -29,10 +33,10 @@
     <a href="#" class="logo"> <span> <img src="Images/Icon_navbar.png"> </span> <p>CP3'S Website</p></a>
 
     <nav class="navbar">
-      <a href="#">Home</a>
-      <a href="About.html">About</a>
-      <a href="Service.html">Service</a>
-      <a href="Contacts.html">Contact</a>
+      <a href="http://localhost/Profile_Portfolio/Home.html">Home</a>
+      <a href="http://localhost/Profile_Portfolio/About.html">About</a>
+      <a href="http://localhost/Profile_Portfolio/Gallery.html">Gallery</a>
+      <a href="http://localhost/Profile_Portfolio/Contacts.php">Contact</a>
     </nav>
 
     <div class="follow">
@@ -51,12 +55,17 @@
   <!-- home part -->
   <section class="home">
 
+
+
     <div class="content">
       <h3>i am <span> Christian Paul Espares</span></h3>
       <p class="info"> I am a bicol university student</p>
       <p class="text"> Welcome to my humble simplistic website. This Portfolio is a representaion of all that I've learned as an IT Student</p>
-        <a href="#" class="btn" id="button">about me</a>
+        <a href="http://localhost/Profile_Portfolio/About.html" class="btn" id="button">about me</a>
     </div>
+
+
+
 
 
     <div class="container">
@@ -78,14 +87,9 @@
       </div>
     </div>
   </section>
-<script src="js/script.js"></script>
-<script>
-  const img = document.querySelector("img");
-  img.onclick = function(){
-    this.classList.toggle("active");
-  }
-</script>
-</body>
- 
+  <script src="js/loader.js"></script>
+  <script src="js/script.js"></script>
 
+
+</body>
 </html>

@@ -1,3 +1,20 @@
+.contact .message span{
+  top: 2rem;
+  max-width: 100%;
+  margin:0 0;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.contact .message i{
+  cursor: pointer;
+}
+
+
 .contact .icons-container {
   display: flex;
   flex-direction: row;
@@ -25,7 +42,7 @@
   font-size: 4rem;
   text-align: center;
   vertical-align: baseline;
-  color:var(--mcolor);
+  color:var(--anwhite);
 
 }
 
@@ -72,8 +89,8 @@ line-height: 1.5rem;
 }
 
 .contact .feedback-form #btn-contact{
-  width: 80%;
-
+  width: 100%;
+  justify-content: center;
 }
 
 .contact .feedback-form .content{

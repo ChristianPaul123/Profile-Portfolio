@@ -20,7 +20,7 @@
   overflow: hidden;
   object-position: top;
   border-radius: .5rem;
-  border: 1rem solid white;
+  border: 1rem solid var(--anwhite);
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -65,7 +65,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 2rem 2.5rem;
-  background-color: white;
+  background-color: var(--anwhite);
   border-radius: 2rem;
  
 }
@@ -95,33 +95,7 @@
   border-radius: 2rem;
 }
 
-.about .row-2 .box-container #sajacs{
-  background: linear-gradient(rgba(0, 0, 0, 0.2),
-              rgba(182, 123, 12, 0.2)),url("https://scontent-cdg4-2.xx.fbcdn.net/v/t1.6435-9/116779974_983443045426379_4743675310744423318_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHnJloXQ3I9vAN9qLLVpxktlurPRP4TBReW6s9E_hMFF_v2PmEh12FlRpESCx5LoVTQjsJWfbztDK0qsWjrEUBG&_nc_ohc=xTrAnCdtXJsAX_oVOVY&_nc_ht=scontent-cdg4-2.xx&oh=00_AfCmA3_JrQMA3Q-hJjlpjQGFrKiNvRzZj_E4e-zoHkA8gg&oe=647FB3D2");
-              background-size: cover;
-  background-position: center;
-}
 
-.about .row-2 .box-container #sjnhs_high{
-  background: linear-gradient(rgba(0, 0, 0, 0.2),
-              rgba(182, 123, 12, 0.2)),url("https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/294494289_552906456627842_8910620674850021216_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFYDNp1X5tMzC4Ek1QkaR4NaqgLmGLkmPpqqAuYYuSY-mjJE6-eq-9mOYpVGjjR4TuGrm87eZNzkTgiypgRKkfO&_nc_ohc=Wx6EWzQDva8AX972KPC&_nc_ht=scontent-cdg4-3.xx&oh=00_AfAElTc7aOG-a_b_Lo6f7Vc1ynJR_sEcZHN1y8nuZuORVw&oe=645C3EBA");
-              background-size: cover;
-  background-position: center;
-}
-
-.about .row-2 .box-container #sjnhs_senior{
-  background: linear-gradient(rgba(0, 0, 0, 0.2),
-              rgba(182, 123, 12, 0.2)),url("https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/294494289_552906456627842_8910620674850021216_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFYDNp1X5tMzC4Ek1QkaR4NaqgLmGLkmPpqqAuYYuSY-mjJE6-eq-9mOYpVGjjR4TuGrm87eZNzkTgiypgRKkfO&_nc_ohc=Wx6EWzQDva8AX972KPC&_nc_ht=scontent-cdg4-3.xx&oh=00_AfAElTc7aOG-a_b_Lo6f7Vc1ynJR_sEcZHN1y8nuZuORVw&oe=645C3EBA");
-              background-size: cover;
-  background-position: center;
-}
-
-.about .row-2 .box-container #bicolU{
-  background: linear-gradient(rgba(0, 0, 0, 0.2),
-              rgba(182, 123, 12, 0.2)),url("https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/271533030_5240855369275815_7690246222511126852_n.png?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHEqI_o3QLaV1f0Ff1JdYdO1l8c26WtelDWXxzbpa16UDfT7ND5VZug0UjCAdMBzf7hK5gJXozONaBaQOuVkSWV&_nc_ohc=_IkpExinbM4AX_0KuRq&_nc_ht=scontent-cdg4-3.xx&oh=00_AfAVckucc_BL1yp7uEwaHyM7EO6IlXjZ6YmGtJDyERCryw&oe=645D045E");
-              background-size: cover;
-  background-position: center;
-}
 
 .about .row-2 .box-container .card .box{
   display: flex;
@@ -133,12 +107,24 @@
   height: 100%;
 }
 
+.about .row-2 .box-container .card .box .class_pic{
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.about .row-2 .box-container .card .box:hover .class_pic{
+ display: none;
+ transition: all 0.8s ease-in;
+}
+
 .about .row-2 .box-container .card .box p{
   font-size: 1.6rem;
   visibility: hidden;
 }
 
-.row-2 .box-container .card .box:hover{
+.about .row-2 .box-container .card .box:hover{
   background: var(--spanfontcolor);
   color: #fff;
   border-radius: 2rem;
@@ -149,7 +135,8 @@
   justify-content: center;
 }
 
-.row-2 .box-container .card .box:hover p{
+.about
+ .row-2 .box-container .card .box:hover p{
   font-size: 1.6rem;
   visibility: visible;
 }
@@ -158,7 +145,136 @@
 .about .row-3{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
   background-color: var(--wheatcolor);
   padding: 1rem;
   border-radius: 2rem;
+}
+
+
+.center,.front-face,
+.contents,.back-face{
+  position: absolute;
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20rem;
+  transform-style: preserve-3d;
+ perspective: 100rem;
+ position: relative;
+}
+.front-face, .back-face{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2),
+              rgba(182, 123, 12, 0.2));
+  background-size: cover;
+  background-position: center;
+  transform: translateY(0deg);
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.4,.2,.2,1);
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  width: 100%;
+  perspective: 100rem;
+}
+.front img{
+  width: 20rem;
+  height: 20rem;
+  object-position: center;
+  object-fit: cover;
+  background-color: var(--spanfontcolor);
+  border-radius: 1rem;
+}
+
+
+.back-face{
+  transform: rotateY(180deg);
+  background: linear-gradient(45deg,#483604 0%,#352903 100%);
+}
+.back {
+  color: white;
+}
+.back h2{
+  font-size: 3.3rem;
+  padding-bottom: 2rem;
+}
+.back span{
+  font-size: 4rem;
+}
+
+.center:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.center:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+
+.about .row-4{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--wheatcolor);
+  padding: 1rem;
+  border-radius: 2rem;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.row-4 .container .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row-4 .container .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.row-4 .container .boxes .box:hover{
+  background: var(--spanfontcolor);
+  color: #fff;
+}
+.row-4 .container .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: var(--spanfontcolor);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.row-4 .container .boxes .box:hover .icon{
+  background-color: #fff;
+  color: #483604;
+}
+.row-4 .container .boxes .box:hover .topic,
+.row-4 .container .boxes .box:hover p{
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+.row-4 .container .boxes .box:hover .topic,
+.row-4 .container .boxes .box:hover p{
+  color: #fff;
 }

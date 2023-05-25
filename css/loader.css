@@ -1,0 +1,43 @@
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--anwhite);
+  transition: 0.5s;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.loader .ring {
+  height: 10rem;
+  width: 10rem;
+  border: 1rem solid var(--spanfontcolor);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader .ring::after {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  border: 1rem solid #ff3d00;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+}
