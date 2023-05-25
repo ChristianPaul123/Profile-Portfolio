@@ -68,6 +68,7 @@ line-height: 1.5rem;
   flex-wrap: wrap;
   align-items: center;
   align-self: center;
+  text-transform: none;
   background-color: wheat;
   padding: 2rem 0;
   border-radius: .5rem;
@@ -98,6 +99,10 @@ line-height: 1.5rem;
   flex-direction: column;
   width: 100%;
   
+}
+
+.contact .feedback-form .content input{
+  text-transform: none;
 }
 
 .contact .feedback-form .content .texts {
